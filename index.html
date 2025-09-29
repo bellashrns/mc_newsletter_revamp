@@ -2,44 +2,124 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OCBC | Melaju Jauh</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: "Fira Sans", sans-serif;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OCBC | Melaju Jauh</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Fira Sans", sans-serif;
+    }
 
-        body {
-            padding-top: 30px;
-        }
+    body {
+      padding-top: 30px;
+    }
 
-        .container {
-            max-width: 640px;
-            margin: auto;
-            padding: 0 20px;
-        }
-    </style>
+    .container {
+      max-width: 640px;
+      margin: auto;
+      padding: 0 20px;
+    }
+
+    .keuntungan-grid-ver1 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 4px;
+    }
+
+    .keuntungan-grid-ver2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 4px;
+    }
+
+    hr {
+      margin: 10px 0;
+    }
+
+    .keuntungan-title {
+      margin-bottom: 5px;
+    }
+
+    .main-article {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 20px;
+    }
+  </style>
 </head>
 
 <body>
-    <section id="header-section">
-        <div class="container">
-            <img src="./img/header.jpg" alt="Header" width="100%">
+  <section id="header-section">
+    <div class="container">
+      <img src="./img/header.jpg" alt="Header" width="100%">
+    </div>
+  </section>
+  <section id="master-head-banner">
+    <div class="container">
+      <img src="./img/banner-masthead-640x200.png" alt="Hero Image" width="100%">
+      <!-- <img src="./img/banner-masthead-640x150.png" alt="Hero Image" width="100%"> -->
+    </div>
+  </section>
+  <section id="main-program">
+    <div class="container"></div>
+  </section>
+  <section id="keuntungan">
+    <div class="container">
+      <hr />
+      <h5 class="keuntungan-title">Keuntungan Spesial 1.0</h5>
+      <div class="keuntungan-grid-ver1">
+        <div class="keuntungan-card">
+          <img src="./img/hero-artikel-280x150.png" alt="Hero Image" width="100%">
         </div>
-    </section>
-    <section id="master-head-banner">
-        <div class="container">
-            <img src="./img/banner-masthead-640x200.png" alt="Hero Image" width="100%">
-            <!-- <img src="./img/banner-masthead-640x150.png" alt="Hero Image" width="100%"> -->
+        <div class="keuntungan-card">
+          <img src="./img/hero-artikel-280x150.png" alt="Hero Image" width="100%">
         </div>
-    </section>
-    <section id="main-program">
-        <div class="container"></div>
-    </section>
+        <div class="keuntungan-card">
+          <img src="./img/hero-artikel-280x150.png" alt="Hero Image" width="100%">
+        </div>
+        <div class="keuntungan-card">
+          <img src="./img/hero-artikel-280x150.png" alt="Hero Image" width="100%">
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <hr />
+      <h5 class="keuntungan-title">Keuntungan Spesial 2.0</h5>
+      <div class="keuntungan-grid-ver2">
+        <div class="keuntungan-card">
+          <img src="./img/keuntungan-card-200x150.png" alt="Hero Image" width="100%">
+        </div>
+        <div class="keuntungan-card">
+          <img src="./img/keuntungan-card-200x150.png" alt="Hero Image" width="100%">
+        </div>
+        <div class="keuntungan-card">
+          <img src="./img/keuntungan-card-200x150.png" alt="Hero Image" width="100%">
+        </div>
+      </div>
+    </div>
+  </section>
+  <secion id="artikel">
+    <div class="container">
+      <hr />
+      <div class="main-article">
+        <img src="./img/hero-artikel-280x150.png" alt="Hero Image" width="100%">
+        <div>
+          <p>Lorem ipsum dolor sit amet consectetur</p>
+          <p>Lorem ipsum dolor sit amet consectetur</p>
+          <p>Lorem ipsum dolor sit amet consectetur</p>
+          <p>Lorem ipsum dolor sit amet consectetur</p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div>
+
+      </div>
+    </div>
+  </secion>
 </body>
 
 </html>
