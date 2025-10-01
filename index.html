@@ -268,6 +268,7 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             column-gap: 20px;
+            align-items: start;
         }
 
         .main-artikel .text .tags {
@@ -291,6 +292,22 @@
         .main-artikel .text .subtitle {
             font-size: 16px;
             color: grey;
+        }
+
+        .main-artikel img {
+            width: 100%;
+            height: auto;
+        }
+
+        @media (max-width: 468px) {
+            .main-artikel {
+                grid-template-columns: 1fr;
+                row-gap: 15px;
+            }
+
+            .main-artikel img {
+                order: -1;
+            }
         }
 
         .list-artikel {
@@ -422,8 +439,7 @@
                 <br />
             </div>
         </section>
-        <!-- Bella -->
-        <section id="keuntungan">
+        <!-- <section id="keuntungan">
             <hr />
             <p class="breadcrumbs"><b>Keuntungan Spesial 1.0</b></p>
             <div class="keuntungan-grid-ver1">
@@ -440,10 +456,10 @@
                     <img src="./img/placeholder-image-1120x600.png" alt="Hero Image" width="100%" />
                 </div>
             </div>
-        </section>
+        </section> -->
         <section id="keuntungan-2">
             <hr />
-            <p class="breadcrumbs"><b>Keuntungan Spesial 2.0</b></p>
+            <p class="breadcrumbs"><b>Keuntungan Spesial</b></p>
             <div class="keuntungan-grid-ver2">
                 <div class="keuntungan-card">
                     <img src="./img/placeholder-image-1000x750.png" alt="Hero Image" width="100%" />
@@ -469,7 +485,7 @@
                     <p class="date">01 Januari 2026</p>
                     <p class="subtitle">
                         Lorem ipsum dolor sit amet consectetura adipisicing elit. Modi
-                        commodi nisi soluta commodi nisi soluta commodi nisi soluta
+                        commodi lorem soluta commodi nisi soluta lorem nisi soluta
                     </p>
                 </div>
             </div>
