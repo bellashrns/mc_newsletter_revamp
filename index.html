@@ -35,6 +35,12 @@
         text-align: center;
       }
 
+      a {
+        color: gray;
+        line-height: 1.4;
+        text-underline-offset: 5px;
+      }
+
       .btn-primary {
         color: white;
         background-color: red;
@@ -225,6 +231,14 @@
         color: grey;
       }
 
+      .color-dark-grey {
+        color: #767676;
+      }
+
+      .text-center {
+        text-align: center;
+      }
+
       #keuntungan {
         padding: 10px 0;
       }
@@ -259,24 +273,27 @@
         column-gap: 20px;
       }
 
-      .main-artikel .text {
+      /* .main-artikel .text {
         display: grid;
         align-content: space-around;
-      }
+      } */
 
       .main-artikel .text .tags {
         font-size: 14px;
         color: red;
+        margin-bottom: 5px;
       }
 
       .main-artikel .text .title {
         font-size: 22px;
         font-weight: bold;
+        margin-bottom: 5px;
       }
 
       .main-artikel .text .date {
         font-size: 14px;
         color: grey;
+        margin-bottom: 5px;
       }
 
       .main-artikel .text .subtitle {
@@ -313,6 +330,27 @@
       .artikel-card .text .subtitle {
         font-size: 12px;
         color: grey;
+      }
+
+      #artikel-lainnya-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 10px;
+        row-gap: 10px;
+      }
+
+      .artikel-lainnya-card {
+        display: grid;
+        align-items: start;
+        column-gap: 5px;
+        grid-template-columns: 20px auto;
+      }
+
+      .artikel-lainnya-card p {
+        border-radius: 50%;
+        padding: 2px;
+        background-color: red;
+        color: white;
       }
 
       /* End bella */
@@ -495,7 +533,7 @@
           />
           <div class="text">
             <p class="tags">Lorem ipsum dolor sit amet consectetur</p>
-            <h4>
+            <h4 class="title">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </h4>
             <p class="date">01 Januari 2026</p>
@@ -563,6 +601,49 @@
                 elit. Inventoi
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+      <section id="artikel-lainnya">
+        <h4 class="breadcrumbs text-center">
+          Simak Juga Artikel Menarik Lainnya
+        </h4>
+        <div id="artikel-lainnya-grid">
+          <div class="artikel-lainnya-card color-dark-grey">
+            <p class="text-center">1</p>
+            <a href="https://ocbc.id/article" target="_blank">
+              <h5>
+                Lorem ipsum dolor sit amet consectetur consect adipisicing elit.
+                Impedit, est!
+              </h5>
+            </a>
+          </div>
+          <div class="artikel-lainnya-card color-dark-grey">
+            <p class="text-center">3</p>
+            <a href="https://ocbc.id/article" target="_blank">
+              <h5>
+                Lorem ipsum dolor sit amet consectetur consect adipisicing elit.
+                Impedit, est!
+              </h5>
+            </a>
+          </div>
+          <div class="artikel-lainnya-card color-dark-grey">
+            <p class="text-center">2</p>
+            <a href="https://ocbc.id/article" target="_blank">
+              <h5>
+                Lorem ipsum dolor sit amet consectetur consect adipisicing elit.
+                Impedit, est!
+              </h5>
+            </a>
+          </div>
+          <div class="artikel-lainnya-card color-dark-grey">
+            <p class="text-center">4</p>
+            <a href="https://ocbc.id/article" target="_blank">
+              <h5>
+                Lorem ipsum dolor sit amet consectetur consect adipisicing elit.
+                Impedit, est!
+              </h5>
+            </a>
           </div>
         </div>
       </section>
