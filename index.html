@@ -23,6 +23,10 @@
       padding: 0 20px;
     }
 
+    .color-grey {
+      color: grey;
+    }
+
     .keuntungan-grid-ver1 {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -43,10 +47,70 @@
       margin-bottom: 5px;
     }
 
-    .main-article {
+    #artikel img {
+      border-radius: 15px;
+    }
+
+    .main-artikel {
       display: grid;
       grid-template-columns: 1fr 1fr;
       column-gap: 20px;
+    }
+
+    .main-artikel .text {
+      display: grid;
+      align-content: space-around;
+    }
+
+    .main-artikel .text .tags {
+      font-size: 14px;
+      color: red;
+    }
+
+    .main-artikel .text .title {
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .main-artikel .text .date {
+      font-size: 14px;
+      color: grey;
+    }
+
+    .main-artikel .text .subtitle {
+      font-size: 16px;
+      color: grey;
+    }
+
+    .list-artikel {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 15px;
+    }
+
+    .artikel-card .text {
+      display: grid;
+      row-gap: 4px;
+    }
+
+    .artikel-card .text .tags {
+      font-size: 12px;
+      color: red;
+    }
+
+    .artikel-card .text .title {
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    .artikel-card .text .date {
+      font-size: 10px;
+      color: grey;
+    }
+
+    .artikel-card .text .subtitle {
+      font-size: 12px;
+      color: grey;
     }
   </style>
 </head>
@@ -59,7 +123,7 @@
   </section>
   <section id="master-head-banner">
     <div class="container">
-      <img src="./img/banner-masthead-640x200.png" alt="Hero Image" width="100%">
+      <img src="./img/placeholder-image-640x200.png" alt="Hero Image" width="100%">
       <!-- <img src="./img/banner-masthead-640x150.png" alt="Hero Image" width="100%"> -->
     </div>
   </section>
@@ -72,16 +136,16 @@
       <h5 class="keuntungan-title">Keuntungan Spesial 1.0</h5>
       <div class="keuntungan-grid-ver1">
         <div class="keuntungan-card">
-          <img src="./img/hero-artikel-280x150.png" alt="Hero Image" width="100%">
+          <img src="./img/placeholder-image-280x150.png" alt="Hero Image" width="100%">
         </div>
         <div class="keuntungan-card">
-          <img src="./img/hero-artikel-280x150.png" alt="Hero Image" width="100%">
+          <img src="./img/placeholder-image-280x150.png" alt="Hero Image" width="100%">
         </div>
         <div class="keuntungan-card">
-          <img src="./img/hero-artikel-280x150.png" alt="Hero Image" width="100%">
+          <img src="./img/placeholder-image-280x150.png" alt="Hero Image" width="100%">
         </div>
         <div class="keuntungan-card">
-          <img src="./img/hero-artikel-280x150.png" alt="Hero Image" width="100%">
+          <img src="./img/placeholder-image-280x150.png" alt="Hero Image" width="100%">
         </div>
       </div>
     </div>
@@ -90,36 +154,66 @@
       <h5 class="keuntungan-title">Keuntungan Spesial 2.0</h5>
       <div class="keuntungan-grid-ver2">
         <div class="keuntungan-card">
-          <img src="./img/keuntungan-card-200x150.png" alt="Hero Image" width="100%">
+          <img src="./img/placeholder-image-200x150.png" alt="Hero Image" width="100%">
         </div>
         <div class="keuntungan-card">
-          <img src="./img/keuntungan-card-200x150.png" alt="Hero Image" width="100%">
+          <img src="./img/placeholder-image-200x150.png" alt="Hero Image" width="100%">
         </div>
         <div class="keuntungan-card">
-          <img src="./img/keuntungan-card-200x150.png" alt="Hero Image" width="100%">
+          <img src="./img/placeholder-image-200x150.png" alt="Hero Image" width="100%">
         </div>
       </div>
     </div>
   </section>
-  <secion id="artikel">
+  <section id="artikel">
     <div class="container">
       <hr />
-      <div class="main-article">
-        <img src="./img/hero-artikel-280x150.png" alt="Hero Image" width="100%">
-        <div>
-          <p>Lorem ipsum dolor sit amet consectetur</p>
-          <p>Lorem ipsum dolor sit amet consectetur</p>
-          <p>Lorem ipsum dolor sit amet consectetur</p>
-          <p>Lorem ipsum dolor sit amet consectetur</p>
+      <div class="main-artikel">
+        <img src="./img/placeholder-image-280x150.png" alt="Hero Image" width="100%">
+        <div class="text">
+          <p class="tags">Lorem ipsum dolor sit amet consectetur</p>
+          <p class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <p class="date">01 Januari 2026</p>
+          <p class="subtitle">Lorem ipsum dolor sit amet consectetura adipisicing elit. Modi commodi nisi soluta</p>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="container">
+      <div class="list-artikel">
+        <div class="artikel-card">
+          <img src="./img/placeholder-image-200x100.png" alt="Hero Image" width="100%">
+          <div class="text">
+          <p class="tags">Lorem ipsum dolor sit</p>
+          <p class="title">Lorem ipsum dolor sit amet adipi consectetur adipisicing elit. adipi</p>
+          <p class="date">01 Januari 2026</p>
+          <p class="subtitle">Lorem ipsum dolor sit amet adipiadi consectetur adipisicing elit. Inventoi</p>
+        </div>
+        </div>
+        <div class="artikel-card">
+          <img src="./img/placeholder-image-200x100.png" alt="Hero Image" width="100%">
+          <div class="text">
+          <p class="tags">Lorem ipsum dolor sit</p>
+          <p class="title">Lorem ipsum dolor sit amet adipi consectetur adipisicing elit. adipi</p>
+          <p class="date">01 Januari 2026</p>
+          <p class="subtitle">Lorem ipsum dolor sit amet adipiadi consectetur adipisicing elit. Inventoi</p>
+        </div>
+        </div>
+        <div class="artikel-card">
+          <img src="./img/placeholder-image-200x100.png" alt="Hero Image" width="100%">
+          <div class="text">
+          <p class="tags">Lorem ipsum dolor sit</p>
+          <p class="title">Lorem ipsum dolor sit amet adipi consectetur adipisicing elit. adipi</p>
+          <p class="date">01 Januari 2026</p>
+          <p class="subtitle">Lorem ipsum dolor sit amet adipiadi consectetur adipisicing elit. Inventoi</p>
+        </div>
         </div>
       </div>
     </div>
     <div class="container">
-      <div>
-
-      </div>
+      <hr />
     </div>
-  </secion>
+  </section>
 </body>
 
 </html>
