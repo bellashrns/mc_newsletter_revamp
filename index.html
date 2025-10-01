@@ -93,6 +93,10 @@
             font-size: 14px;
         }
 
+        .small-p {
+            font-size: 12px
+        }
+
         a {
             font-size: 14px;
         }
@@ -120,6 +124,10 @@
 
             p {
                 font-size: 13px;
+            }
+
+            .small-p {
+                font-size: 10px
             }
 
             a {
@@ -302,10 +310,6 @@
             height: auto;
         }
 
-        .artikel-lainnya-text {
-            font-size: 12px
-        }
-
         @media (max-width: 468px) {
             .main-artikel {
                 grid-template-columns: 1fr;
@@ -314,10 +318,6 @@
 
             .main-artikel img {
                 order: -1;
-            }
-
-            .artikel-lainnya-text {
-                font-size: 10px
             }
         }
 
@@ -374,6 +374,87 @@
         }
 
         /* End bella */
+
+        /* Start Footer Section */
+        #footer-section {
+            padding-top: 20px;
+        }
+
+        .footer-contact {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            border-right: 1px solid rgb(185, 185, 185);
+            border-left: 1px solid rgb(185, 185, 185);
+        }
+
+        .contact-item.no-border {
+            border-right: none;
+            border-left: none;
+        }
+
+        .contact-item-1 {
+            padding-right: 10px;
+        }
+
+        .contact-item-2 {
+            padding: 0 10px;
+        }
+
+        .contact-item-3 {
+            padding-left: 10px;
+        }
+
+        .footer-social {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+            gap: 15px;
+        }
+
+        .footer-social .social-item {
+            text-decoration: none;
+        }
+
+        .footer-social .social-icon {
+            font-size: 22px;
+            cursor: pointer;
+        }
+
+        .footer-bottom {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 20px;
+            margin-top: 10px;
+            align-items: center;
+        }
+
+        .footer-left {
+            text-align: left;
+        }
+
+        .footer-right {
+            text-align: right;
+        }
+
+        .footer-right .tagline {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .ojk-text {
+            margin-top: 10px;
+        }
+
+        /* End Footer Section */
     </style>
 </head>
 
@@ -557,7 +638,7 @@
                 <div class="artikel-lainnya-card color-dark-grey">
                     <p class="text-center artikel-number">1</p>
                     <a href="https://ocbc.id/article" target="_blank">
-                        <p class="artikel-lainnya-text">
+                        <p class="small-p">
                             Lorem ipsum dolor sit amet consectetur consect adipisicing elit.
                             Impedit, est!
                         </p>
@@ -566,7 +647,7 @@
                 <div class="artikel-lainnya-card color-dark-grey">
                     <p class="text-center artikel-number">3</p>
                     <a href="https://ocbc.id/article" target="_blank">
-                        <p class="artikel-lainnya-text">
+                        <p class="small-p">
                             Lorem ipsum dolor sit amet consectetur consect adipisicing elit.
                             Impedit, est!
                         </p>
@@ -575,7 +656,7 @@
                 <div class="artikel-lainnya-card color-dark-grey">
                     <p class="text-center artikel-number">2</p>
                     <a href="https://ocbc.id/article" target="_blank">
-                        <p class="artikel-lainnya-text">
+                        <p class="small-p">
                             Lorem ipsum dolor sit amet consectetur consect adipisicing elit.
                             Impedit, est!
                         </p>
@@ -589,6 +670,47 @@
                             Impedit, est!
                         </p>
                     </a>
+                </div>
+            </div>
+        </section>
+        <section id="footer-section">
+            <div class="text-center">
+                <h4>Punya Pertanyaan?</h4>
+                <p>Hubungi kami disini:</p>
+                <div class="footer-contact">
+                    <div class="contact-item contact-item-1 no-border">
+                        <span class="icon">📞</span>
+                        <p class="small-p">1500-999</p>
+                    </div>
+                    <div class="contact-item contact-item-2">
+                        <span class="icon">✉️</span>
+                        <p class="small-p">tanya@ocbc.id</p>
+                    </div>
+                    <div class="contact-item contact-item-3 no-border">
+                        <span class="icon">💬</span>
+                        <p class="small-p">08121500999</p>
+                    </div>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-item"><span class="social-icon">🌐</span></a>
+                    <a href="#" class="social-item"><span class="social-icon">🌐</span></a>
+                    <a href="#" class="social-item"><span class="social-icon">🌐</span></a>
+                    <a href="#" class="social-item"><span class="social-icon">🌐</span></a>
+                    <a href="#" class="social-item"><span class="social-icon">🌐</span></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-left">
+                    <p class="small-p"><b>PT Bank OCBC NISP Tbk</b></p>
+                    <p class="small-p">OCBC Tower Jl Prof Dr. Satrio Kav 25</p>
+                    <p class="small-p">Jakarta, DKI Jakarta, 12940 Indonesia</p>
+                    <p class="small-p ojk-text">
+                        PT Bank OCBC NISP Tbk berizin dan diawasi oleh Otoritas Jasa Keuangan & Bank Indonesia, serta
+                        merupakan peserta penjaminan LPS.
+                    </p>
+                </div>
+                <div class="footer-right">
+                    <p>Terus bersama,<br>melaju jauh</p>
                 </div>
             </div>
         </section>
