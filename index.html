@@ -1,464 +1,571 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OCBC | Melaju Jauh</title>
     <style>
-        /* General Styling */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: "Fira Sans", sans-serif;
-        }
+      /* General Styling */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Fira Sans", sans-serif;
+      }
 
-    body {
-      background-color: #ebebeb;
-      line-height: 1.1;
-      padding-top: 30px;
-    }
+      body {
+        background-color: #ebebeb;
+        line-height: 1.1;
+      }
 
-        .container {
-            padding-top: 20px !important;
-            max-width: 640px;
-            margin: auto;
-            padding: 0 20px;
-            background-color: white;
-        }
+      .header-container {
+        max-width: 640px;
+        margin: auto;
+        background-color: white;
+      }
 
-        .text-center {
-            text-align: center;
-        }
+      .container {
+        padding: 20px !important;
+        max-width: 640px;
+        margin: auto;
+        background-color: white;
+      }
 
-        .btn-primary {
-            color: white;
-            background-color: red;
-            border-radius: 15px;
-            padding: 10px 15px;
-            border: none;
-            cursor: pointer;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
+      .text-center {
+        text-align: center;
+      }
 
-        .btn-primary:hover {
-            transform: scale(1.05);
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-        }
+      .btn-primary {
+        color: white;
+        background-color: red;
+        border-radius: 15px;
+        padding: 10px 15px;
+        border: none;
+        cursor: pointer;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
 
-        .breadcrumbs {
-            margin: 10px 0;
-        }
+      .btn-primary:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+      }
 
-        .sub-heading {
-            margin-top: 5px;
-        }
+      .breadcrumbs {
+        margin: 10px 0;
+      }
 
+      .sub-heading {
+        margin-top: 5px;
+      }
+
+      img {
+        border-radius: 10px;
+      }
+
+      h1 {
+        font-size: 24px;
+      }
+
+      h2 {
+        font-size: 22px;
+      }
+
+      h3 {
+        font-size: 20px;
+      }
+
+      h4 {
+        font-size: 16px;
+      }
+
+      h5 {
+        font-size: 14px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+
+      a {
+        font-size: 14px;
+      }
+
+      @media screen and (max-width: 468px) {
         h1 {
-            font-size: 24px;
+          font-size: 20px;
         }
 
         h2 {
-            font-size: 22px;
+          font-size: 18px;
         }
 
         h3 {
-            font-size: 20px;
+          font-size: 16px;
         }
 
         h4 {
-            font-size: 16px;
+          font-size: 15px;
         }
 
         h5 {
-            font-size: 14px;
+          font-size: 13px;
         }
 
         p {
-            font-size: 14px;
+          font-size: 13px;
         }
 
         a {
-            font-size: 14px;
+          font-size: 13px;
         }
+      }
 
-        @media screen and (max-width: 468px) {
-            h1 {
-                font-size: 20px;
-            }
+      /* End General Styling */
 
-            h2 {
-                font-size: 18px;
-            }
+      /* Start Main Program */
+      #main-program-section {
+        padding: 10px 0;
+      }
 
-            h3 {
-                font-size: 16px;
-            }
+      .main-program-card-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+      }
 
-            h4 {
-                font-size: 15px;
-            }
+      .card-col {
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+        text-align: center;
+      }
 
-            h5 {
-                font-size: 13px;
-            }
+      .card-text {
+        padding: 10px;
+      }
 
-            p {
-                font-size: 13px;
-            }
+      .card-col img {
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+      }
 
-            a {
-                font-size: 13px;
-            }
-        }
+      .card-col h4 {
+        margin-bottom: 5px;
+      }
 
-        /* End General Styling */
+      .card-col p {
+        color: #444;
+      }
 
-        /* Start Main Program */
-        #main-program-section {
-            padding: 10px 0;
-        }
+      /* End Main Program */
 
-        .main-program-card-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            gap: 10px;
-        }
+      /* Start Promo Menarik */
+      #promo-menarik-section {
+        padding: 10px 0;
+      }
 
-        .card-col {
-            background: #fff;
-            border-radius: 12px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            text-align: center;
-        }
+      .promo-menarik-card-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+      }
 
-        .card-text {
-            padding: 10px;
-        }
+      .horizontal-card-col {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+        padding: 15px;
+      }
 
-        .card-col img {
-            border-top-left-radius: 8px;
-            border-top-right-radius: 8px;
-        }
+      .horizontal-card-col img {
+        width: 40%;
+        border-radius: 8px;
+        object-fit: cover;
+      }
 
-        .card-col h4 {
-            margin-bottom: 5px;
-        }
+      .horizontal-card-col .card-text {
+        flex: 1;
+        text-align: left;
+      }
 
-        .card-col p {
-            color: #444;
-        }
+      .horizontal-card-col h4 {
+        margin-bottom: 8px;
+      }
 
-        /* End Main Program */
+      .horizontal-card-col p {
+        margin-bottom: 12px;
+        color: #444;
+      }
 
-        /* Start Promo Menarik */
-        #promo-menarik-section {
-            padding: 10px 0;
-        }
-
+      @media screen and (max-width: 768px) {
         .promo-menarik-card-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 15px;
+          grid-template-columns: 1fr;
         }
 
         .horizontal-card-col {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            background: #fff;
-            border-radius: 12px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-            padding: 15px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+          flex-direction: row;
         }
 
         .horizontal-card-col img {
-            width: 40%;
-            border-radius: 8px;
-            object-fit: cover;
+          width: 35%;
         }
 
         .horizontal-card-col .card-text {
-            flex: 1;
-            text-align: left;
+          text-align: left;
         }
+      }
 
-        .horizontal-card-col h4 {
-            margin-bottom: 8px;
-        }
+      /* End Promo Menarik */
 
-        .horizontal-card-col p {
-            margin-bottom: 12px;
-            color: #444;
-        }
+      /* Start bella */
+      .color-grey {
+        color: grey;
+      }
 
-        @media screen and (max-width: 768px) {
-            .promo-menarik-card-grid {
-                grid-template-columns: 1fr;
-            }
+      #keuntungan {
+        padding: 10px 0;
+      }
 
-            .horizontal-card-col {
-                flex-direction: row;
-            }
+      #keuntungan-2 {
+        padding: 10px 0;
+      }
 
-            .horizontal-card-col img {
-                width: 35%;
-            }
+      .keuntungan-grid-ver1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 4px;
+      }
 
-            .horizontal-card-col .card-text {
-                text-align: left;
-            }
-        }
+      .keuntungan-grid-ver2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 4px;
+      }
 
-        /* End Promo Menarik */
+      hr {
+        margin: 10px 0;
+      }
 
-        /* Start bella */
-        .color-grey {
-      color: grey;
-    }
+      #artikel {
+        padding: 10px 0;
+      }
 
-    .keuntungan-grid-ver1 {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      column-gap: 4px;
-    }
+      .main-artikel {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+      }
 
-    .keuntungan-grid-ver2 {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      column-gap: 4px;
-    }
+      .main-artikel .text {
+        display: grid;
+        align-content: space-around;
+      }
 
-    hr {
-      margin: 10px 0;
-    }
+      .main-artikel .text .tags {
+        font-size: 14px;
+        color: red;
+      }
 
-    .keuntungan-title {
-      margin-bottom: 5px;
-    }
+      .main-artikel .text .title {
+        font-size: 22px;
+        font-weight: bold;
+      }
 
-    #artikel img {
-      border-radius: 15px;
-    }
+      .main-artikel .text .date {
+        font-size: 14px;
+        color: grey;
+      }
 
-    .main-artikel {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      column-gap: 20px;
-    }
+      .main-artikel .text .subtitle {
+        font-size: 16px;
+        color: grey;
+      }
 
-    .main-artikel .text {
-      display: grid;
-      align-content: space-around;
-    }
+      .list-artikel {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 15px;
+      }
 
-    .main-artikel .text .tags {
-      font-size: 14px;
-      color: red;
-    }
+      .artikel-card .text {
+        display: grid;
+        row-gap: 4px;
+      }
 
-    .main-artikel .text .title {
-      font-size: 22px;
-      font-weight: bold;
-    }
+      .artikel-card .text .tags {
+        font-size: 12px;
+        color: red;
+      }
 
-    .main-artikel .text .date {
-      font-size: 14px;
-      color: grey;
-    }
+      .artikel-card .text .title {
+        font-size: 12px;
+        font-weight: bold;
+      }
 
-    .main-artikel .text .subtitle {
-      font-size: 16px;
-      color: grey;
-    }
+      .artikel-card .text .date {
+        font-size: 10px;
+        color: grey;
+      }
 
-    .list-artikel {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      column-gap: 15px;
-    }
+      .artikel-card .text .subtitle {
+        font-size: 12px;
+        color: grey;
+      }
 
-    .artikel-card .text {
-      display: grid;
-      row-gap: 4px;
-    }
-
-    .artikel-card .text .tags {
-      font-size: 12px;
-      color: red;
-    }
-
-    .artikel-card .text .title {
-      font-size: 12px;
-      font-weight: bold;
-    }
-
-    .artikel-card .text .date {
-      font-size: 10px;
-      color: grey;
-    }
-
-    .artikel-card .text .subtitle {
-      font-size: 12px;
-      color: grey;
-    }
-        /* End bella */
+      /* End bella */
     </style>
-</head>
+  </head>
 
-<body>
-  <section id="header-section">
+  <body>
+    <section id="header-section">
+      <div class="header-container">
+        <img src="./img/header.jpg" alt="Header" width="100%" />
+      </div>
+    </section>
     <div class="container">
-      <img src="./img/header.jpg" alt="Header" width="100%">
-    </div>
-  </section>
-  <section id="master-head-banner">
-            <img src="https://seosecret.id/placeholder/1280x400/d5d5d5/584959" alt="Hero Image" width="100%">
-        </section>
-  <section id="main-program-section">
-            <div class="text-center">
-                <h1>Spesial Kemerdekaan! Hemat hingga Rp 5 Juta 🥳</h1>
-                <p class="sub-heading">Rayakan Kemerdekaan dengan beragam promo dari OCBC!</p>
-                <br>
-                <div class="main-program-card-grid">
-                    <div class="card-col">
-                        <img src="https://seosecret.id/placeholder/1000x1000/d5d5d5/584959" alt="" width="100%">
-                        <div class="card-text">
-                            <h4>Hemat hingga Rp 5 Juta</h4>
-                            <p>Hemat di berbagai <em>pet friendly merchant</em> pilihan</p>
-                        </div>
-                    </div>
-                    <div class="card-col">
-                        <img src="https://seosecret.id/placeholder/1000x1000/d5d5d5/584959" alt="" width="100%">
-                        <div class="card-text">
-                            <h4>Hemat hingga Rp 5 Juta</h4>
-                            <p>Hemat di berbagai <em>pet friendly merchant</em> pilihan</p>
-                        </div>
-                    </div>
-                    <div class="card-col">
-                        <img src="https://seosecret.id/placeholder/1000x1000/d5d5d5/584959" alt="" width="100%">
-                        <div class="card-text">
-                            <h4>Hemat hingga Rp 5 Juta</h4>
-                            <p>Hemat di berbagai <em>pet friendly merchant</em> pilihan</p>
-                        </div>
-                    </div>
-                </div>
-                <br>
-                <a href="https://ocbc.id/promo"><button class="btn-primary">Promo Menarik Lainnya</button></a>
+      <section id="master-head-banner">
+        <img
+          src="https://seosecret.id/placeholder/1280x400/d5d5d5/584959"
+          alt="Hero Image"
+          width="100%"
+        />
+      </section>
+      <section id="main-program-section">
+        <div class="text-center">
+          <h1>Spesial Kemerdekaan! Hemat hingga Rp 5 Juta 🥳</h1>
+          <p class="sub-heading">
+            Rayakan Kemerdekaan dengan beragam promo dari OCBC!
+          </p>
+          <br />
+          <div class="main-program-card-grid">
+            <div class="card-col">
+              <img
+                src="https://seosecret.id/placeholder/1000x1000/d5d5d5/584959"
+                alt=""
+                width="100%"
+              />
+              <div class="card-text">
+                <h4>Hemat hingga Rp 5 Juta</h4>
+                <p>Hemat di berbagai <em>pet friendly merchant</em> pilihan</p>
+              </div>
             </div>
-        </section>
-        <section id="promo-menarik-section">
-            <hr>
-            <p class="breadcrumbs"><b>Promo Menarik</b></p>
-            <div class="text-center">
-                <div class="promo-menarik-card-grid">
-                    <div class="horizontal-card-col">
-                        <img src="https://seosecret.id/placeholder/1000x1000/d5d5d5/584959" alt="" width="100%">
-                        <div class="card-text">
-                            <p>Hemat di berbagai <em>pet friendly merchant</em> pilihan Hemat di berbagai <em>pet
-                                    friendly merchant</em> pilihan</p>
-                            <a href="https://ocbc.id/promo"><button class="btn-primary">Selengkapnya</button></a>
-                        </div>
-                    </div>
-                    <div class="horizontal-card-col">
-                        <img src="https://seosecret.id/placeholder/1000x1000/d5d5d5/584959" alt="" width="100%">
-                        <div class="card-text">
-                            <p>Hemat di berbagai <em>pet friendly merchant</em> pilihan Hemat di berbagai <em>pet
-                                    friendly merchant</em> pilihan</p>
-                            <a href="https://ocbc.id/promo"><button class="btn-primary">Selengkapnya</button></a>
-                        </div>
-                    </div>
-                </div>
-                <br>
+            <div class="card-col">
+              <img
+                src="https://seosecret.id/placeholder/1000x1000/d5d5d5/584959"
+                alt=""
+                width="100%"
+              />
+              <div class="card-text">
+                <h4>Hemat hingga Rp 5 Juta</h4>
+                <p>Hemat di berbagai <em>pet friendly merchant</em> pilihan</p>
+              </div>
             </div>
-        </section>
-  <section id="keuntungan">
-    <div class="container">
-      <hr />
-      <h5 class="keuntungan-title">Keuntungan Spesial 1.0</h5>
-      <div class="keuntungan-grid-ver1">
-        <div class="keuntungan-card">
-          <img src="./img/placeholder-image-280x150.png" alt="Hero Image" width="100%">
+            <div class="card-col">
+              <img
+                src="https://seosecret.id/placeholder/1000x1000/d5d5d5/584959"
+                alt=""
+                width="100%"
+              />
+              <div class="card-text">
+                <h4>Hemat hingga Rp 5 Juta</h4>
+                <p>Hemat di berbagai <em>pet friendly merchant</em> pilihan</p>
+              </div>
+            </div>
+          </div>
+          <br />
+          <a href="https://ocbc.id/promo"
+            ><button class="btn-primary">Promo Menarik Lainnya</button></a
+          >
         </div>
-        <div class="keuntungan-card">
-          <img src="./img/placeholder-image-280x150.png" alt="Hero Image" width="100%">
+      </section>
+      <section id="promo-menarik-section">
+        <hr />
+        <p class="breadcrumbs"><b>Promo Menarik</b></p>
+        <div class="text-center">
+          <div class="promo-menarik-card-grid">
+            <div class="horizontal-card-col">
+              <img
+                src="https://seosecret.id/placeholder/1000x1000/d5d5d5/584959"
+                alt=""
+                width="100%"
+              />
+              <div class="card-text">
+                <p>
+                  Hemat di berbagai <em>pet friendly merchant</em> pilihan Hemat
+                  di berbagai <em>pet friendly merchant</em> pilihan
+                </p>
+                <a href="https://ocbc.id/promo"
+                  ><button class="btn-primary">Selengkapnya</button></a
+                >
+              </div>
+            </div>
+            <div class="horizontal-card-col">
+              <img
+                src="https://seosecret.id/placeholder/1000x1000/d5d5d5/584959"
+                alt=""
+                width="100%"
+              />
+              <div class="card-text">
+                <p>
+                  Hemat di berbagai <em>pet friendly merchant</em> pilihan Hemat
+                  di berbagai <em>pet friendly merchant</em> pilihan
+                </p>
+                <a href="https://ocbc.id/promo"
+                  ><button class="btn-primary">Selengkapnya</button></a
+                >
+              </div>
+            </div>
+          </div>
+          <br />
         </div>
-        <div class="keuntungan-card">
-          <img src="./img/placeholder-image-280x150.png" alt="Hero Image" width="100%">
+      </section>
+      <!-- Bella -->
+      <section id="keuntungan">
+        <hr />
+        <p class="breadcrumbs"><b>Keuntungan Spesial 1.0</b></p>
+        <div class="keuntungan-grid-ver1">
+          <div class="keuntungan-card">
+            <img
+              src="./img/placeholder-image-280x150.png"
+              alt="Hero Image"
+              width="100%"
+            />
+          </div>
+          <div class="keuntungan-card">
+            <img
+              src="./img/placeholder-image-280x150.png"
+              alt="Hero Image"
+              width="100%"
+            />
+          </div>
+          <div class="keuntungan-card">
+            <img
+              src="./img/placeholder-image-280x150.png"
+              alt="Hero Image"
+              width="100%"
+            />
+          </div>
+          <div class="keuntungan-card">
+            <img
+              src="./img/placeholder-image-280x150.png"
+              alt="Hero Image"
+              width="100%"
+            />
+          </div>
         </div>
-        <div class="keuntungan-card">
-          <img src="./img/placeholder-image-280x150.png" alt="Hero Image" width="100%">
+      </section>
+      <section id="keuntungan-2">
+        <hr />
+        <p class="breadcrumbs"><b>Keuntungan Spesial 2.0</b></p>
+        <div class="keuntungan-grid-ver2">
+          <div class="keuntungan-card">
+            <img
+              src="./img/placeholder-image-200x150.png"
+              alt="Hero Image"
+              width="100%"
+            />
+          </div>
+          <div class="keuntungan-card">
+            <img
+              src="./img/placeholder-image-200x150.png"
+              alt="Hero Image"
+              width="100%"
+            />
+          </div>
+          <div class="keuntungan-card">
+            <img
+              src="./img/placeholder-image-200x150.png"
+              alt="Hero Image"
+              width="100%"
+            />
+          </div>
         </div>
-      </div>
-    </div>
-    <div class="container">
-      <hr />
-      <h5 class="keuntungan-title">Keuntungan Spesial 2.0</h5>
-      <div class="keuntungan-grid-ver2">
-        <div class="keuntungan-card">
-          <img src="./img/placeholder-image-200x150.png" alt="Hero Image" width="100%">
-        </div>
-        <div class="keuntungan-card">
-          <img src="./img/placeholder-image-200x150.png" alt="Hero Image" width="100%">
-        </div>
-        <div class="keuntungan-card">
-          <img src="./img/placeholder-image-200x150.png" alt="Hero Image" width="100%">
-        </div>
-      </div>
-    </div>
-  </section>
-  <section id="artikel">
-    <div class="container">
-      <hr />
-      <div class="main-artikel">
-        <img src="./img/placeholder-image-280x150.png" alt="Hero Image" width="100%">
-        <div class="text">
-          <p class="tags">Lorem ipsum dolor sit amet consectetur</p>
-          <p class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          <p class="date">01 Januari 2026</p>
-          <p class="subtitle">Lorem ipsum dolor sit amet consectetura adipisicing elit. Modi commodi nisi soluta</p>
-        </div>
-      </div>
-    </div>
-    <br>
-    <div class="container">
-      <div class="list-artikel">
-        <div class="artikel-card">
-          <img src="./img/placeholder-image-200x100.png" alt="Hero Image" width="100%">
+      </section>
+      <section id="artikel">
+        <hr />
+        <p class="breadcrumbs"><b>Artikel</b></p>
+        <div class="main-artikel">
+          <img
+            src="./img/placeholder-image-280x150.png"
+            alt="Hero Image"
+            width="100%"
+          />
           <div class="text">
-          <p class="tags">Lorem ipsum dolor sit</p>
-          <p class="title">Lorem ipsum dolor sit amet adipi consectetur adipisicing elit. adipi</p>
-          <p class="date">01 Januari 2026</p>
-          <p class="subtitle">Lorem ipsum dolor sit amet adipiadi consectetur adipisicing elit. Inventoi</p>
+            <p class="tags">Lorem ipsum dolor sit amet consectetur</p>
+            <h4>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </h4>
+            <p class="date">01 Januari 2026</p>
+            <p class="subtitle">
+              Lorem ipsum dolor sit amet consectetura adipisicing elit. Modi
+              commodi nisi soluta
+            </p>
+          </div>
         </div>
+        <br />
+        <div class="list-artikel">
+          <div class="artikel-card">
+            <img
+              src="./img/placeholder-image-200x100.png"
+              alt="Hero Image"
+              width="100%"
+            />
+            <div class="text">
+              <p class="tags">Lorem ipsum dolor sit</p>
+              <p class="title">
+                Lorem ipsum dolor sit amet adipi consectetur adipisicing elit.
+                adipi
+              </p>
+              <p class="date">01 Januari 2026</p>
+              <p class="subtitle">
+                Lorem ipsum dolor sit amet adipiadi consectetur adipisicing
+                elit. Inventoi
+              </p>
+            </div>
+          </div>
+          <div class="artikel-card">
+            <img
+              src="./img/placeholder-image-200x100.png"
+              alt="Hero Image"
+              width="100%"
+            />
+            <div class="text">
+              <p class="tags">Lorem ipsum dolor sit</p>
+              <p class="title">
+                Lorem ipsum dolor sit amet adipi consectetur adipisicing elit.
+                adipi
+              </p>
+              <p class="date">01 Januari 2026</p>
+              <p class="subtitle">
+                Lorem ipsum dolor sit amet adipiadi consectetur adipisicing
+                elit. Inventoi
+              </p>
+            </div>
+          </div>
+          <div class="artikel-card">
+            <img
+              src="./img/placeholder-image-200x100.png"
+              alt="Hero Image"
+              width="100%"
+            />
+            <div class="text">
+              <p class="tags">Lorem ipsum dolor sit</p>
+              <p class="title">
+                Lorem ipsum dolor sit amet adipi consectetur adipisicing elit.
+                adipi
+              </p>
+              <p class="date">01 Januari 2026</p>
+              <p class="subtitle">
+                Lorem ipsum dolor sit amet adipiadi consectetur adipisicing
+                elit. Inventoi
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="artikel-card">
-          <img src="./img/placeholder-image-200x100.png" alt="Hero Image" width="100%">
-          <div class="text">
-          <p class="tags">Lorem ipsum dolor sit</p>
-          <p class="title">Lorem ipsum dolor sit amet adipi consectetur adipisicing elit. adipi</p>
-          <p class="date">01 Januari 2026</p>
-          <p class="subtitle">Lorem ipsum dolor sit amet adipiadi consectetur adipisicing elit. Inventoi</p>
-        </div>
-        </div>
-        <div class="artikel-card">
-          <img src="./img/placeholder-image-200x100.png" alt="Hero Image" width="100%">
-          <div class="text">
-          <p class="tags">Lorem ipsum dolor sit</p>
-          <p class="title">Lorem ipsum dolor sit amet adipi consectetur adipisicing elit. adipi</p>
-          <p class="date">01 Januari 2026</p>
-          <p class="subtitle">Lorem ipsum dolor sit amet adipiadi consectetur adipisicing elit. Inventoi</p>
-        </div>
-        </div>
-      </div>
+      </section>
     </div>
-    <div class="container">
-      <hr />
-    </div>
-  </section>
-</body>
-
+  </body>
 </html>
