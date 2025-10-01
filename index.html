@@ -43,6 +43,10 @@
             box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
         }
 
+        .breadcrumbs {
+            margin: 10px 0;
+        }
+
         h1 {
             font-size: 24px;
         }
@@ -105,7 +109,7 @@
 
         /* Start Main Program */
         #main-program-section {
-            padding: 15px 0;
+            padding: 10px 0;
         }
 
         .main-program-card-grid {
@@ -140,6 +144,68 @@
         }
 
         /* End Main Program */
+
+        /* Start Promo Menarik */
+        #promo-menarik-section {
+            padding: 10px 0;
+        }
+
+        .promo-menarik-card-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .horizontal-card-col {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+            padding: 15px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .horizontal-card-col img {
+            width: 40%;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+
+        .horizontal-card-col .card-text {
+            flex: 1;
+            text-align: left;
+        }
+
+        .horizontal-card-col h4 {
+            margin-bottom: 8px;
+        }
+
+        .horizontal-card-col p {
+            margin-bottom: 12px;
+            color: #444;
+        }
+
+        @media screen and (max-width: 768px) {
+            .promo-menarik-card-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .horizontal-card-col {
+                flex-direction: row;
+            }
+
+            .horizontal-card-col img {
+                width: 35%;
+            }
+
+            .horizontal-card-col .card-text {
+                text-align: left;
+            }
+        }
+
+        /* End Promo Menarik */
     </style>
 </head>
 
@@ -185,6 +251,33 @@
                 </div>
                 <br>
                 <a href="https://ocbc.id/promo"><button class="btn-primary">Promo Menarik Lainnya</button></a>
+            </div>
+        </div>
+    </section>
+    <section id="promo-menarik-section">
+        <div class="container">
+            <hr>
+            <p class="breadcrumbs"><b>Promo Menarik</b></p>
+            <div class="text-center">
+                <div class="promo-menarik-card-grid">
+                    <div class="horizontal-card-col">
+                        <img src="https://seosecret.id/placeholder/1000x1000/d5d5d5/584959" alt="" width="100%">
+                        <div class="card-text">
+                            <p>Hemat di berbagai <em>pet friendly merchant</em> pilihan Hemat di berbagai <em>pet
+                                    friendly merchant</em> pilihan</p>
+                            <a href="https://ocbc.id/promo"><button class="btn-primary">Selengkapnya</button></a>
+                        </div>
+                    </div>
+                    <div class="horizontal-card-col">
+                        <img src="https://seosecret.id/placeholder/1000x1000/d5d5d5/584959" alt="" width="100%">
+                        <div class="card-text">
+                            <p>Hemat di berbagai <em>pet friendly merchant</em> pilihan Hemat di berbagai <em>pet
+                                    friendly merchant</em> pilihan</p>
+                            <a href="https://ocbc.id/promo"><button class="btn-primary">Selengkapnya</button></a>
+                        </div>
+                    </div>
+                </div>
+                <br>
             </div>
         </div>
     </section>
