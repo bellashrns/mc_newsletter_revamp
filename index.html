@@ -36,6 +36,14 @@
             text-align: center;
         }
 
+        .text-gray {
+            color: gray;
+        }
+
+        .text-dark-gray {
+            color: rgb(87, 87, 87);
+        }
+
         a {
             color: gray;
             line-height: 1.4;
@@ -94,11 +102,15 @@
         }
 
         .small-p {
-            font-size: 12px
+            font-size: 12px;
         }
 
         a {
             font-size: 14px;
+        }
+
+        .small-a {
+            font-size: 12px;
         }
 
         @media screen and (max-width: 468px) {
@@ -127,11 +139,15 @@
             }
 
             .small-p {
-                font-size: 10px
+                font-size: 10px;
             }
 
             a {
                 font-size: 13px;
+            }
+
+            .small-a {
+                font-size: 10px;
             }
 
             .no-mob {
@@ -454,6 +470,10 @@
             margin-top: 10px;
         }
 
+        .footer-sk {
+            margin-top: 10px;
+        }
+
         /* End Footer Section */
     </style>
 </head>
@@ -674,10 +694,10 @@
             </div>
         </section>
         <section id="footer-section">
-            <div class="text-center">
+            <div class="text-center text-dark-gray">
                 <h4>Punya Pertanyaan?</h4>
                 <p>Hubungi kami disini:</p>
-                <div class="footer-contact">
+                <div class="footer-contact ">
                     <div class="contact-item contact-item-1 no-border">
                         <span class="icon">📞</span>
                         <p class="small-p">1500-999</p>
@@ -699,7 +719,7 @@
                     <a href="#" class="social-item"><span class="social-icon">🌐</span></a>
                 </div>
             </div>
-            <div class="footer-bottom">
+            <div class="footer-bottom text-gray">
                 <div class="footer-left">
                     <p class="small-p"><b>PT Bank OCBC NISP Tbk</b></p>
                     <p class="small-p">OCBC Tower Jl Prof Dr. Satrio Kav 25</p>
@@ -711,6 +731,13 @@
                 </div>
                 <div class="footer-right">
                     <p>Terus bersama,<br>melaju jauh</p>
+                </div>
+            </div>
+            <div class="footer-sk text-gray">
+                <div class="text-center">
+                    <p class="small-p">Syarat & Ketentuan Privasi | Kebijakan Privasi</p>
+                    <p class="small-p">Anda menerima e-mail karena Anda telah mendaftarkan email Anda pada layanan
+                        kami,<br><a href="" class="small-a">Unsubscribe</a></p>
                 </div>
             </div>
         </section>
