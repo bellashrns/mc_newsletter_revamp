@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OCBC | Melaju Jauh</title>
     <style>
+        /* General Styling */
         * {
             margin: 0;
             padding: 0;
@@ -22,6 +23,123 @@
             margin: auto;
             padding: 0 20px;
         }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .btn-primary {
+            color: white;
+            background-color: red;
+            border-radius: 15px;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        h2 {
+            font-size: 22px;
+        }
+
+        h3 {
+            font-size: 20px;
+        }
+
+        h4 {
+            font-size: 16px;
+        }
+
+        h5 {
+            font-size: 14px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+
+        a {
+            font-size: 14px;
+        }
+
+        @media screen and (max-width: 468px) {
+            h1 {
+                font-size: 20px;
+            }
+
+            h2 {
+                font-size: 18px;
+            }
+
+            h3 {
+                font-size: 16px;
+            }
+
+            h4 {
+                font-size: 15px;
+            }
+
+            h5 {
+                font-size: 13px;
+            }
+
+            p {
+                font-size: 13px;
+            }
+
+            a {
+                font-size: 13px;
+            }
+        }
+
+        /* End General Styling */
+
+        /* Start Main Program */
+        #main-program-section {
+            padding: 15px 0;
+        }
+
+        .main-program-card-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+        }
+
+        .card-col {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+        }
+
+        .card-text {
+            padding: 10px;
+        }
+
+        .card-col img {
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+
+        .card-col h4 {
+            margin-bottom: 5px;
+        }
+
+        .card-col p {
+            color: #444;
+        }
+
+        /* End Main Program */
     </style>
 </head>
 
@@ -33,12 +151,42 @@
     </section>
     <section id="master-head-banner">
         <div class="container">
-            <img src="./img/banner-masthead-640x200.png" alt="Hero Image" width="100%">
-            <!-- <img src="./img/banner-masthead-640x150.png" alt="Hero Image" width="100%"> -->
+            <img src="https://seosecret.id/placeholder/1280x400/d5d5d5/584959" alt="Hero Image" width="100%">
         </div>
     </section>
-    <section id="main-program">
-        <div class="container"></div>
+    <section id="main-program-section">
+        <div class="container">
+            <div class="text-center">
+                <h1>Spesial Kemerdekaan! Hemat hingga Rp 5 Juta 🥳</h1>
+                <p>Rayakan Kemerdekaan dengan beragama promo dari OCBC!</p>
+                <br>
+                <div class="main-program-card-grid">
+                    <div class="card-col">
+                        <img src="https://seosecret.id/placeholder/1000x1000/d5d5d5/584959" alt="" width="100%">
+                        <div class="card-text">
+                            <h4>Hemat hingga Rp 5 Juta</h4>
+                            <p>Hemat di berbagai <em>pet friendly merchant</em> pilihan</p>
+                        </div>
+                    </div>
+                    <div class="card-col">
+                        <img src="https://seosecret.id/placeholder/1000x1000/d5d5d5/584959" alt="" width="100%">
+                        <div class="card-text">
+                            <h4>Hemat hingga Rp 5 Juta</h4>
+                            <p>Hemat di berbagai <em>pet friendly merchant</em> pilihan</p>
+                        </div>
+                    </div>
+                    <div class="card-col">
+                        <img src="https://seosecret.id/placeholder/1000x1000/d5d5d5/584959" alt="" width="100%">
+                        <div class="card-text">
+                            <h4>Hemat hingga Rp 5 Juta</h4>
+                            <p>Hemat di berbagai <em>pet friendly merchant</em> pilihan</p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <a href="https://ocbc.id/promo"><button class="btn-primary">Promo Menarik Lainnya</button></a>
+            </div>
+        </div>
     </section>
 </body>
 
